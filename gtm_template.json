@@ -1,0 +1,54 @@
+{
+  "template_id": "country_gtm_v1",
+  "title_pattern": "{country} Go-To-Market Memo",
+  "sections": [
+    {
+      "id": "demographics",
+      "title": "2. Demographics — {{country}} (GTM)",
+      "source_type": "web",
+      "output_style": "bullets",
+      "required_metrics": [
+        "population",
+        "internet_users",
+        "internet_penetration_pct",
+        "facebook_users",
+        "instagram_users",
+        "tiktok_users",
+        "youtube_users",
+        "social_media_identities"
+      ],
+      "preferred_sources": [
+        {
+          "name": "DataReportal",
+          "domains": ["datareportal.com"],
+          "notes": "Use latest Digital report for internet & social media stats."
+        }
+      ]
+    },
+    {
+      "id": "languages",
+      "title": "3. Languages & Script",
+      "source_type": "web",
+      "output_style": "bullets",
+      "required_metrics": [
+        "dominant_language",
+        "script_direction",
+        "english_proficiency",
+        "english_proficiency_rank",
+        "regional_dialects"
+      ],
+      "preferred_sources": [
+        {
+          "name": "EF EPI",
+          "domains": ["ef.com"],
+          "notes": "Source for English proficiency ranking."
+        },
+        {
+          "name": "Official statistics office",
+          "domains": [],
+          "notes": "Use the official stats office domain for the given country (e.g. .gov or .gob)."
+        }
+      ]
+    }
+  ]
+}
