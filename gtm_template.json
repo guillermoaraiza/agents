@@ -17,13 +17,22 @@
         "youtube_users",
         "social_media_identities"
       ],
+      "manual_metrics": [
+        "audience_and_target_demographic",
+        "projected_subscriber_growth"
+      ],
       "preferred_sources": [
         {
           "name": "DataReportal",
           "domains": ["datareportal.com"],
-          "notes": "Use latest Digital report for internet & social media stats."
+          "notes": "Use this year or the latest digital report for internet & social media stats."
         }
-      ]
+        {
+          "name": "DataReportal",
+          "domains": [],
+          "notes": "Do not use the Audience and Target Demographic"
+        }
+      ],
     },
     {
       "id": "languages",
