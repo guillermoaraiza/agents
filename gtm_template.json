@@ -4,18 +4,17 @@
   "sections": [
     {
       "id": "demographics",
-      "title": "2. Demographics — {{country}} (GTM)",
       "source_type": "web",
-      "output_style": "bullets",
       "required_metrics": [
-        "population",
-        "internet_users",
-        "internet_penetration_pct",
-        "facebook_users",
-        "instagram_users",
-        "tiktok_users",
-        "youtube_users",
-        "social_media_identities"
+        "demographics_summary": "demographics_summary",
+        "internet_users": "internet_users",
+        "internet_users_pct": "internet_users_pct",
+        "facebook_users": "facebook_users",
+        "youtube_users": "youtube_users",
+        "instagram_users": "instagram_users",
+        "tiktok_users": "tiktok_users",
+        "social_identities": "social_identities",
+        "social_identities_pct": "social_identities_pct"
       ],
       "manual_metrics": [
         "audience_and_target_demographic",
@@ -25,7 +24,7 @@
         {
           "name": "DataReportal",
           "domains": ["datareportal.com"],
-          "notes": "Use this year or the latest digital report for internet & social media stats."
+          "notes": "Always use the latest Digital report for [[Country]] from https://datareportal.com/ For internet & social media stats."
         }
         {
           "name": "DataReportal",
