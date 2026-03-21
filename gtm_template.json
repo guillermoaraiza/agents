@@ -50,12 +50,12 @@
         {
           "name": "Official Government Websites",
           "domains": [],
-          "notes": "Search for {Country} Regional dialects using the official stats office domain for the given country."
+          "notes": "Search freely on the web for \"{Country} regional dialects\" and related official terms. Prioritize the national statistics office and official government portals, even though their domains differ per country."
         },
         {
           "name": "Script and Writing Direction",
           "domains": ["https://www.w3.org/International/questions/qa-scripts.en.html"],
-          "notes": "Source of Script direction. Search the writing direction and if the country has more than one script."
+          "notes": "Use this specific W3C page to determine the script and writing direction, and whether the country uses multiple scripts."
         }
       ]
     }
