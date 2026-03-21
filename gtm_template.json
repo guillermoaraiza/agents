@@ -5,17 +5,48 @@
     {
       "id": "demographics",
       "source_type": "web",
-      "required_metrics": [
-        "demographics_summary",
-        "internet_users",
-        "internet_users_pct",
-        "facebook_users",
-        "youtube_users",
-        "instagram_users",
-        "tiktok_users",
-        "social_identities",
-        "social_identities_pct"
-      ],
+      "required_metrics": {
+        "demographics_summary": {
+          "sources": ["DataReportal"],
+          "description": "1–2 sentence summary of population, internet penetration, and social platform reach."
+        },
+        "internet_users": {
+          "sources": ["DataReportal"],
+          "description": "Total number of internet users (formatted string, e.g. '34.5M')."
+        },
+        "internet_users_pct": {
+          "sources": ["DataReportal"],
+          "description": "Internet penetration as % of population."
+        },
+        "facebook_users": {
+          "sources": ["DataReportal"],
+          "description": "Facebook users (formatted string)."
+        },
+        "youtube_users": {
+          "sources": ["DataReportal"],
+          "description": "YouTube users (formatted string)."
+        },
+        "instagram_users": {
+          "sources": ["DataReportal"],
+          "description": "Instagram users (formatted string)."
+        },
+        "tiktok_users": {
+          "sources": ["DataReportal"],
+          "description": "TikTok users 18+ (formatted string)."
+        },
+        "social_identities": {
+          "sources": ["DataReportal"],
+          "description": "Total social media identities (formatted string)."
+        },
+        "social_identities_pct": {
+          "sources": ["DataReportal"],
+          "description": "Social media identities as % of population."
+        },
+        "demographics_sources": {
+          "sources": ["DataReportal"],
+          "description": "List of sources actually used for the demographics metrics."
+        }
+      },
       "manual_metrics": [
         "audience_and_target_demographic",
         "projected_subscriber_growth"
@@ -33,29 +64,56 @@
       "title": "3. Languages & Script",
       "source_type": "web",
       "output_style": "bullets",
-      "required_metrics": [
-        "dominant_language",
-        "script_direction",
-        "english_proficiency",
-        "english_proficiency_rank",
-        "english_score",
-        "regional_dialects"
-      ],
+      "required_metrics": {
+        "languages_summary": {
+          "sources": ["EF EPI", "Official Government Websites"],
+          "description": "1–2 sentence summary of dominant language, script, and English proficiency."
+        },
+        "dominant_language": {
+          "sources": ["Official Government Websites"],
+          "description": "Dominant language in the country."
+        },
+        "script_direction": {
+          "sources": ["Script and Writing Direction"],
+          "description": "Script and writing direction (e.g., Latin, left-to-right)."
+        },
+        "english_proficiency": {
+          "sources": ["EF EPI"],
+          "description": "English proficiency level (e.g., High)."
+        },
+        "english_proficiency_rank": {
+          "sources": ["EF EPI"],
+          "description": "EF EPI global rank (e.g., #15 globally)."
+        },
+        "english_score": {
+          "sources": ["EF EPI"],
+          "description": "EF EPI score (numeric)."
+        },
+        "regional_dialects": {
+          "sources": ["Official Government Websites"],
+          "description": "High-level summary of regional dialects or language variants."
+        },
+        "languages_sources": {
+          "sources": ["EF EPI", "Official Government Websites", "Script and Writing Direction"],
+          "description": "Human-readable list of sources used for the language metrics."
+        }
       "preferred_sources": [
         {
           "name": "EF EPI",
           "domains": ["ef.com"],
-          "notes": "Source for English proficiency ranking and Scores."
+          "notes": "Use EF EPI for English proficiency level, rank, and score."
         },
         {
           "name": "Official Government Websites",
           "domains": [],
-          "notes": "Search freely on the web for \"{Country} regional dialects\" and related official terms. Prioritize the national statistics office and official government portals, even though their domains differ per country."
+          "notes": "Search freely on the web for \"{Country} regional dialects\" and prioritize national statistics offices and official government portals."
         },
         {
           "name": "Script and Writing Direction",
-          "domains": ["https://www.w3.org/International/questions/qa-scripts.en.html"],
-          "notes": "Use this specific W3C page to determine the script and writing direction, and whether the country uses multiple scripts."
+          "domains": [
+            "https://www.w3.org/International/questions/qa-scripts.en.html"
+          ],
+          "notes": "Use this W3C page to determine script and writing direction, and whether the country uses multiple scripts."
         }
       ]
     }
