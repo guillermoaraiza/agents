@@ -24,7 +24,7 @@
         {
           "name": "DataReportal",
           "domains": ["datareportal.com"],
-          "notes": "Always use the latest Digital report for [[Country]] from https://datareportal.com/ For internet & social media stats."
+          "notes": "Always use the latest Digital report for [[Country]] from DataReportal For internet & social media stats."
         }
       ],
     },
@@ -45,12 +45,17 @@
         {
           "name": "EF EPI",
           "domains": ["ef.com"],
-          "notes": "Source for English proficiency ranking."
+          "notes": "Source for English proficiency ranking and Scores."
         },
         {
-          "name": "Official statistics office",
+          "name": "Official Government Websites",
           "domains": [],
-          "notes": "Use the official stats office domain for the given country (e.g. .gov or .gob)."
+          "notes": "Search for Regional dialects and their adoption using the official stats office domain for the given country (e.g. .gov or .gob)."
+        },
+        {
+          "name": "Script and Writing Direction",
+          "domains": ["https://www.w3.org/International/questions/qa-scripts.en.html"],
+          "notes": "Source of Script direction. Search the writing direction and if the country has more than one script."
         }
       ]
     }
