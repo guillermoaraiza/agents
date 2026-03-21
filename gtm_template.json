@@ -97,6 +97,7 @@
           "sources": ["EF EPI", "Official Government Websites", "Script and Writing Direction"],
           "description": "Human-readable list of sources used for the language metrics."
         }
+      },
       "preferred_sources": [
         {
           "name": "EF EPI",
