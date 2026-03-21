@@ -44,7 +44,7 @@
         },
         "demographics_sources": {
           "sources": ["DataReportal"],
-          "description": "List of sources actually used for the demographics metrics."
+          "description": "Human-readable list of sources actually used for the demographics metrics."
         }
       },
       "manual_metrics": [
@@ -55,9 +55,9 @@
         {
           "name": "DataReportal",
           "domains": ["datareportal.com"],
-          "notes": "Always use the latest Digital report for [[Country]] from DataReportal For internet & social media stats."
+          "notes": "Use the latest Digital report for this country for internet users, social media identities, and platform reach (YouTube, Facebook, Instagram, TikTok)."
         }
-      ],
+      ]
     },
     {
       "id": "languages",
