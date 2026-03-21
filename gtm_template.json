@@ -1,6 +1,6 @@
 {
   "template_id": "country_gtm_v1",
-  "title_pattern": "{country} Go-To-Market Memo",
+  "title_pattern": "{Country} Go-To-Market Memo",
   "sections": [
     {
       "id": "demographics",
@@ -50,7 +50,7 @@
         {
           "name": "Official Government Websites",
           "domains": [],
-          "notes": "Search for Regional dialects and their adoption using the official stats office domain for the given country (e.g. .gov or .gob)."
+          "notes": "Search for {Country} Regional dialects using the official stats office domain for the given country."
         },
         {
           "name": "Script and Writing Direction",
